@@ -29,6 +29,11 @@ public class Orderline {
 	@JoinColumn(name="orderId")
 	public Order order;
 	
+	//another FK
+//	@ManyToOne(optional=false)
+//	@JoinColumn(name="productId")
+//	public Product product;
+	
 	public int getId() {
 		return id;
 	}
@@ -58,5 +63,8 @@ public class Orderline {
 		return order;
 	}
 	
+	public void setOrder(Order order) {
+		this.order = order;
+	}
 	
 }

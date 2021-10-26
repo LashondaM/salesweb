@@ -13,6 +13,7 @@ import com.acme.sales.customers.Customer;
 @Entity(name="orders")
 public class Order {
 
+	// Primary Key
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
@@ -23,6 +24,7 @@ public class Order {
 	@Column(columnDefinition="decimal(10,2) NOT NULL DEFAULT 0.0")
 	private double total;
 	
+	// Foreign Key
 	@ManyToOne(optional=false)
 	@JoinColumn(name="customerId")
 	public Customer customer;

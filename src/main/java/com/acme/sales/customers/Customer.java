@@ -12,6 +12,8 @@ import javax.persistence.UniqueConstraint;
 @Table(uniqueConstraints=@UniqueConstraint(name="UIDX_code", columnNames={"code"})) // UIDX - Unique Index -- is in the code column 
 @Entity(name="customers")
 public class Customer {
+	
+	// Primary Key
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
