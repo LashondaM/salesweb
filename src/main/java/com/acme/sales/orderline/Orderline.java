@@ -54,5 +54,9 @@ public class Orderline {
 		this.price = price;
 	}
 	
+	public Order getOrder() {
+		return order;
+	}
+	
 	
 }
